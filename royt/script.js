@@ -963,7 +963,7 @@ var RoYT;
          * @private
          */
         CommentSection.prototype.getVideoSearchString = function(videoID) {
-            return encodeURI("(url:" + videoID + ") AND (site:youtube.com OR site:youtu.be)");
+            return encodeURI("(url:" + videoID + ") AND (site:youtube.com OR site:youtu.be) AND (subreddit:Fact_Fiend_Official)");
         };
         return CommentSection;
     })();
