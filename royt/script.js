@@ -610,7 +610,7 @@ var RoYT;
                     redditContainer.style.display = "none";
                     redditButton.style.display = "block";
                 } else {
-                    serviceCommentsContainer.style.display = "none";
+                    serviceCommentsContainer.style.display = "";
                 }
             }
             /* Set the setting for whether or not RoYT should show itself on this YouTube channel */
@@ -638,6 +638,8 @@ var RoYT;
                 commentsContainer.appendChild(redditContainer);
                 return redditContainer;
             } else {
+                serviceCommentsContainer.style.display = "";
+                commentsContainer.style.display = "";
             }
         };
         /**
