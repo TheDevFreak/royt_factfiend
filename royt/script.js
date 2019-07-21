@@ -622,7 +622,7 @@ var RoYT;
                 allowOnChannel.children[0].appendChild(document.createTextNode(RoYT.Application.localisationManager.get("options_label_showReddit")));
                 var allowOnChannelCheckbox = allowOnChannel.querySelector("#allowonchannel");
                 if(this.getDisplayActionForCurrentChannel() === "royt") {
-                    allowOnChannelCheckbox.checked = true;
+                    allowOnChannelCheckbox.checked = false;
                 }
                 allowOnChannelCheckbox.addEventListener("change", this.allowOnChannelChange, false);
                 actionsContainer.appendChild(allowOnChannel);
