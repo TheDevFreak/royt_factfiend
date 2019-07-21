@@ -1,10 +1,10 @@
 {
-    "name": "Reddit on Youtube",
+    "name": "Reddit on Youtube, Fact Fiend Edition",
     "short_name": "royt",
     "description": "Adds Reddit comments to Youtube videos!",
     "developer": {
-      "name": "mkalash",
-      "url": "https://github.com/mustafakalash/royt"
+      "name": "mkalash&TheDevFreak",
+      "url": "https://github.com/TheDevFreak/royt_factfiend"
     },
     "applications": {
       "gecko": {
