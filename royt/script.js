@@ -614,7 +614,7 @@ var RoYT;
                 }
             }
             /* Set the setting for whether or not RoYT should show itself on this YouTube channel */
-            var allowOnChannelContainer = document.getElementById("allowOnChannelContainer");
+            /*var allowOnChannelContainer = document.getElementById("allowOnChannelContainer");
             if (!allowOnChannelContainer) {
                 var actionsContainer = Application.getYouTubeSection("actionsContainer");
 
@@ -628,14 +628,17 @@ var RoYT;
                 actionsContainer.appendChild(allowOnChannel);
             }
             /* Apply style adjustments for new layout */
-            if(!Utilities.useOldYouTubeLayout()) {
+            /*if(!Utilities.useOldYouTubeLayout()) {
                 redditContainer.classList.add("new-layout");
                 allowOnChannelContainer.classList.add("new-layout");
-            }
+            }*/
             /* Add RoYT contents */
-            redditContainer.appendChild(contents);
-            commentsContainer.appendChild(redditContainer);
-            return redditContainer;
+            if ( document.getElementById('owner-container').getElementsByTagName('a')[0].href.includes('UCaR-e8ComPih10DqPi3sdWg') ) {
+                redditContainer.appendChild(contents);
+                commentsContainer.appendChild(redditContainer);
+                return redditContainer;
+            } else {
+            }
         };
         /**
             * Validate a Reddit search result set and ensure the link urls go to the correct address.
